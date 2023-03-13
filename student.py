@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 
+
 class Student:
     """A Student calss as base for method testing"""
 
@@ -13,3 +14,10 @@ class Student:
     @property
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
+
+    def alert_santa(self):
+        self.naughty_list = True
+
+    @property
+    def email(self):
+        return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
