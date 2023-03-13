@@ -1,4 +1,4 @@
-from datatime import data, timedelta
+from datetime import date, timedelta
 
 class Student:
     """A Student calss as base for method testing"""
@@ -11,5 +11,5 @@ class Student:
         self.naughty_list = False
 
     @property
-    del full_name(self):
+    def full_name(self):
         return f"{self._first_name} {self._last_name}"
